@@ -1,0 +1,7 @@
+route1:
+    path:     /
+    defaults: { _controller: 'Movies\Controllers\Main::lastDVDMovies' }
+
+route2:
+    path:     /foo/bar
+    defaults: { _controller: 'MyController::foobarAction' }

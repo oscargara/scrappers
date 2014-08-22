@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "classmap": ["project/src", "project/lib"]
+    },
+
+    "require": {
+        "symfony/routing": "2.5.*",
+        "symfony/yaml": "2.5.*",
+        "symfony/config": "2.5.*",
+        "symfony/http-foundation": "2.5.*",
+        "doctrine/doctrine-cache-bundle": "~1.0",
+        "wtfzdotnet/php-tmdb-api": ">=1.2.0"
+    }
+}
