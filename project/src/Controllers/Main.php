@@ -15,8 +15,8 @@ class Main {
 
         $layout = new \TemplateEngine\Layout('layoutGlobal', RESOURCES_FOLDER . '/views/');
 
-        //$items = $this->getDVDs(14*4);
-        $items = $this->getByTitle('Coherence');
+        $items = $this->getDVDs(14*4);
+        //$items = $this->getByTitle('Coherence');
 
         $data = array('dvds'=>$items);
 
