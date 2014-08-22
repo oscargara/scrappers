@@ -14,7 +14,6 @@ class BootLoader {
     private $container;
 
     public function boot(){
-        date_default_timezone_set('America/Montreal');
         $this->container = array();
         $this->bootMatcher($this->container);
     }
@@ -29,7 +28,7 @@ class BootLoader {
         $locator = new FileLocator(array(CONFIG_FOLDER));
         $loader = new YamlFileLoader($locator);
         $collection = $loader->load('routes.yml');
-        $collection->addPrefix('/testTomatoes/project/htdocs/');
+        $collection->addPrefix(ROUTE_PREFIX);
 
         $context = new RequestContext();
         $context->fromRequest(Request::createFromGlobals());
