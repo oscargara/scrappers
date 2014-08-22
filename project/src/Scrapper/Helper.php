@@ -18,6 +18,13 @@ class Helper {
     public function __construct($cacheFolder, $apiKey){
         $this->cacheFolder = $cacheFolder;
         $this->apiKey =$apiKey;
+
+        if (!is_dir($this->cacheFolder . '/php-tmdb-api')) {
+            mkdir($this->cacheFolder . '/php-tmdb-api');
+        }
+        if (!is_dir($this->cacheFolder . '/html')) {
+            mkdir($this->cacheFolder . '/html');
+        }
     }
 
     function getHTMLFromUrl($url, $useCache = true) {
@@ -65,7 +72,7 @@ class Helper {
     }
 
     private function getFilenameForHTMLCache($url){
-        return $this->cacheFolder . '/html/'. md5($url) . '.html';;
+        return $this->cacheFolder . '/html/'. md5($url) . '.html';
     }
 
     public function hydrateItem(\Movies\Entities\MovieMeta &$item){
