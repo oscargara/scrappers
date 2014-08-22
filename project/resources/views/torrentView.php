@@ -4,22 +4,25 @@ $torrent = $data;
 
 if($torrent) {
 ?>
-<div>
-    Age: <?php echo $torrent->age;?>
-</div>
-<div>
-    Size: <?php echo $torrent->movieSize;?>
-</div>
-<div>
-    Leach: <?php echo $torrent->leech;?>
-</div>
-<div>
-    Seeds: <?php echo $torrent->seed;?>
-</div>
-<div>
-    Title: <?php echo $torrent->title;?>
-</div>
-<div>
-    Url: <?php echo $torrent->url;?>
+<div class="torrent-info">
+    <h3>Torrent info</h3>
+    <div>
+        <span class="label">Age:</span> <?php echo $torrent->age;?>
+    </div>
+    <div>
+        <span class="label">Size:</span> <?php echo $torrent->movieSize;?>
+    </div>
+    <div>
+        <span class="label">Leach:</span> <?php echo $torrent->leech;?>
+    </div>
+    <div>
+        <span class="label">Seeds:</span> <?php echo $torrent->seed;?>
+    </div>
+    <div>
+        <span class="label">Title:</span> <?php echo $torrent->title;?>
+    </div>
+    <div>
+        <span class="label">Url:</span> <?php echo $torrent->url;?>
+    </div>
 </div>
 <?php } ?>

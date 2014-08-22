@@ -16,3 +16,16 @@ h2 a {
     font-size:150%;
     text-decoration: none;
 }
+
+span.label{
+    font-weight: bold;
+}
+
+div.torrent-info{
+    padding-top: 10px;
+}
+
+div.torrent-info h3{
+    font-size:120%;
+    font-weight: bold;
+}
