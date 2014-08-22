@@ -1,0 +1,6 @@
+# Ignore everything in this directory
+cache/*
+project/conf/config.php
+vendor/
+composer.lock
+composer.phar
