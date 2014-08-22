@@ -1,3 +1,18 @@
 .dvd-image {
     width: 100px;
+    padding-right: 5px;
+}
+
+li.dvd-item {
+    padding: 10px;
+}
+
+li.dvd-item:nth-child(odd) {
+    background-color:#F0F0F0 ;
+}
+
+h2 a {
+    color: #FF9900;
+    font-size:150%;
+    text-decoration: none;
 }
