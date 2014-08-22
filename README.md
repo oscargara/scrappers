@@ -13,4 +13,4 @@ Installation / Usage
     $ php composer.phar install
     ```
 
-3. Change the filename project/conf/config-demo.php to project/conf/config.php, and edit the parameters inside.
+3. Copy the filename project/conf/config-demo.php to project/conf/config.php, and edit the parameters inside.
